@@ -6,7 +6,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.regex.Matcher;
@@ -37,7 +36,7 @@ public class PDFReader {
 		int noOfOrganizations = Integer.valueOf(Utility.getProperty(Constants.NO_OF_ORGANIZATIONS));
 		for (int orgNo = 1; orgNo <= noOfOrganizations; orgNo++) {
 			readDirectory(orgNo);
-			
+
 		}
 	}
 
@@ -66,26 +65,20 @@ public class PDFReader {
 				logger.info("File being processed : " + fileName);
 
 				inputStream = new BufferedInputStream(new FileInputStream(new File(inputDirectory + fileName)));
-				System.out.println("11");
 				Parser parser = new AutoDetectParser();
 				ContentHandler handler = new BodyContentHandler();
-				System.out.println("12");
 				parser.parse(inputStream, handler, new Metadata(), new ParseContext());
-				System.out.println("13");
 				logger.debug("The raw content read from the file : " + handler.toString());
 
 				String contentAfterPhoneNo = cleanUpContent(handler.toString());
-				System.out.println("14");
 				logger.debug("The processed content of the file : " + contentAfterPhoneNo);
 
 				SentenceTextRequest sentenceTextRequest = createSentenceTextRequestObj(contentAfterPhoneNo);
-				System.out.println("15");
 				// Added Org ID
 				sentenceTextRequest.getDiscreteData().setOrganizationId(orgID);
 
 				// the first few letters before "_" of the file name
 				sentenceTextRequest.getDiscreteData().setPatientAccount(fileName.substring(0, fileName.indexOf("_")));
-				System.out.println("16");
 				logger.debug(
 						"The object of SentenceTextRequest for converting to JSON : " + sentenceTextRequest.toString());
 
@@ -93,16 +86,14 @@ public class PDFReader {
 
 				String jsonObj = new Gson().toJson(sentenceTextRequest);
 				logger.debug("jsonObj of " + fileName + " : " + jsonObj);
-				System.out.println("17");
 				String response = PostJSONRequestor.postJSONRequest(jsonObj);
 				logger.debug("API response for " + fileName + " : " + response);
-				System.out.println("18");
 				try {
 					inputStream.close();
 				} catch (IOException e) {
 					logger.error(e.getStackTrace());
 				}
-				//once the file is processed, move it to output directory
+				// once the file is processed, move it to output directory
 				Files.move(Paths.get(inputDirectory + fileName), Paths.get(outputDirectory + fileName),
 						StandardCopyOption.REPLACE_EXISTING);
 				logger.info("File successfully processed and moved to output directory : " + fileName);

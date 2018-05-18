@@ -1,30 +1,197 @@
-2018-05-17 16:30:21.723 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
- 2018-05-17 16:30:21.723 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
- 2018-05-17 16:30:21.723 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (10).pdf
- 2018-05-17 16:30:59.228 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
- 2018-05-17 16:30:59.233 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (10).pdf
- 2018-05-17 16:30:59.233 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (11).pdf
- 2018-05-18 08:50:29.230 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
- 2018-05-18 08:50:29.232 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
- 2018-05-18 08:50:29.233 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (10).pdf
- 2018-05-18 09:07:55.659 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
- 2018-05-18 09:07:55.661 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
- 2018-05-18 09:07:55.663 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (10).pdf
- 2018-05-18 09:08:18.649 ERROR com.mst.pdf.processor.PostJSONRequestor: Exception : Connection timed out: connect
- 2018-05-18 09:08:18.650 ERROR com.mst.pdf.processor.PDFReader: Exception : Connection timed out: connect
- 2018-05-18 09:08:18.651 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input2/
- 2018-05-18 09:08:18.651 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output2/
- 2018-05-18 09:08:18.656 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (10).pdf
- 2018-05-18 09:09:16.628 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
- 2018-05-18 09:09:16.629 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
- 2018-05-18 09:09:16.630 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178.pdf
- 2018-05-18 09:10:33.849 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
- 2018-05-18 09:10:33.850 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
- 2018-05-18 09:10:33.850 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178.pdf
- 2018-05-18 09:11:13.154 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
- 2018-05-18 09:11:13.156 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
- 2018-05-18 09:11:13.156 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178.pdf
- 2018-05-18 09:15:12.526 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
- 2018-05-18 09:15:12.528 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
- 2018-05-18 09:15:12.528 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178.pdf
+2018-05-18 11:55:54.764 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
+ 2018-05-18 11:55:54.765 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
+ 2018-05-18 11:55:54.766 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (10).pdf
+ 2018-05-18 11:56:05.091 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:56:05.097 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (10).pdf
+ 2018-05-18 11:56:05.097 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (11).pdf
+ 2018-05-18 11:56:14.004 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:56:14.010 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (11).pdf
+ 2018-05-18 11:56:14.010 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (12).pdf
+ 2018-05-18 11:56:21.781 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:56:21.785 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (12).pdf
+ 2018-05-18 11:56:21.785 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (13).pdf
+ 2018-05-18 11:56:29.261 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:56:29.265 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (13).pdf
+ 2018-05-18 11:56:29.265 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (14).pdf
+ 2018-05-18 11:56:36.730 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:56:36.735 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (14).pdf
+ 2018-05-18 11:56:36.736 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (15).pdf
+ 2018-05-18 11:56:44.031 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:56:44.035 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (15).pdf
+ 2018-05-18 11:56:44.036 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (16).pdf
+ 2018-05-18 11:56:51.311 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:56:51.315 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (16).pdf
+ 2018-05-18 11:56:51.316 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (17).pdf
+ 2018-05-18 11:56:58.781 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:56:58.785 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (17).pdf
+ 2018-05-18 11:56:58.786 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (18).pdf
+ 2018-05-18 11:57:06.088 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:57:06.092 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (18).pdf
+ 2018-05-18 11:57:06.092 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (19).pdf
+ 2018-05-18 11:57:13.314 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:57:13.319 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (19).pdf
+ 2018-05-18 11:57:13.320 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (2).pdf
+ 2018-05-18 11:57:20.581 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:57:20.585 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (2).pdf
+ 2018-05-18 11:57:20.585 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (3).pdf
+ 2018-05-18 11:57:28.262 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:57:28.267 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (3).pdf
+ 2018-05-18 11:57:28.267 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (4).pdf
+ 2018-05-18 11:57:35.742 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:57:35.746 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (4).pdf
+ 2018-05-18 11:57:35.747 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (5).pdf
+ 2018-05-18 11:57:43.226 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:57:43.230 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (5).pdf
+ 2018-05-18 11:57:43.230 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (6).pdf
+ 2018-05-18 11:57:50.930 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:57:50.935 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (6).pdf
+ 2018-05-18 11:57:50.935 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (7).pdf
+ 2018-05-18 11:57:58.813 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:57:58.817 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (7).pdf
+ 2018-05-18 11:57:58.818 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (8).pdf
+ 2018-05-18 11:58:06.288 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:58:06.292 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (8).pdf
+ 2018-05-18 11:58:06.292 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (9).pdf
+ 2018-05-18 11:58:13.874 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:58:13.878 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (9).pdf
+ 2018-05-18 11:58:13.878 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy.pdf
+ 2018-05-18 11:58:21.702 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:58:21.707 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy.pdf
+ 2018-05-18 11:58:21.707 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178.pdf
+ 2018-05-18 11:58:29.163 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:58:29.167 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178.pdf
+ 2018-05-18 11:58:29.168 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input2/
+ 2018-05-18 11:58:29.168 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output2/
+ 2018-05-18 11:58:29.170 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (10).pdf
+ 2018-05-18 11:58:37.094 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:58:37.096 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (10).pdf
+ 2018-05-18 11:58:37.096 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (11).pdf
+ 2018-05-18 11:58:44.559 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:58:44.562 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (11).pdf
+ 2018-05-18 11:58:44.562 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (12).pdf
+ 2018-05-18 11:58:52.328 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:58:52.334 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (12).pdf
+ 2018-05-18 11:58:52.335 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (13).pdf
+ 2018-05-18 11:59:00.416 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:59:00.421 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (13).pdf
+ 2018-05-18 11:59:00.421 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (14).pdf
+ 2018-05-18 11:59:08.426 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:59:08.429 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (14).pdf
+ 2018-05-18 11:59:08.430 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (15).pdf
+ 2018-05-18 11:59:16.205 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:59:16.208 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (15).pdf
+ 2018-05-18 11:59:16.208 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (16).pdf
+ 2018-05-18 11:59:24.140 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:59:24.141 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (16).pdf
+ 2018-05-18 11:59:24.141 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (17).pdf
+ 2018-05-18 11:59:31.896 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:59:31.901 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (17).pdf
+ 2018-05-18 11:59:31.901 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (18).pdf
+ 2018-05-18 11:59:39.961 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:59:39.965 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (18).pdf
+ 2018-05-18 11:59:39.965 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (19).pdf
+ 2018-05-18 11:59:47.877 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:59:47.881 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (19).pdf
+ 2018-05-18 11:59:47.881 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (2).pdf
+ 2018-05-18 11:59:55.725 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 11:59:55.730 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (2).pdf
+ 2018-05-18 11:59:55.730 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (3).pdf
+ 2018-05-18 12:00:03.780 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:00:03.784 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (3).pdf
+ 2018-05-18 12:00:03.784 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (4).pdf
+ 2018-05-18 12:00:11.735 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:00:11.738 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (4).pdf
+ 2018-05-18 12:00:11.738 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (5).pdf
+ 2018-05-18 12:00:20.152 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:00:20.157 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (5).pdf
+ 2018-05-18 12:00:20.157 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (6).pdf
+ 2018-05-18 12:00:28.041 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:00:28.045 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (6).pdf
+ 2018-05-18 12:00:28.045 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (7).pdf
+ 2018-05-18 12:00:35.956 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:00:35.957 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (7).pdf
+ 2018-05-18 12:00:35.957 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (8).pdf
+ 2018-05-18 12:00:43.936 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:00:43.942 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (8).pdf
+ 2018-05-18 12:00:43.943 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (9).pdf
+ 2018-05-18 12:00:52.047 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:00:52.051 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (9).pdf
+ 2018-05-18 12:00:52.051 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy.pdf
+ 2018-05-18 12:00:59.975 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:00:59.977 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy.pdf
+ 2018-05-18 12:00:59.977 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179.pdf
+ 2018-05-18 12:01:08.176 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:01:08.180 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179.pdf
+ 2018-05-18 12:04:17.656 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
+ 2018-05-18 12:04:17.658 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
+ 2018-05-18 12:04:17.658 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input2/
+ 2018-05-18 12:04:17.658 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output2/
+ 2018-05-18 12:04:17.659 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (10).pdf
+ 2018-05-18 12:04:18.318 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
+ 2018-05-18 12:04:18.320 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
+ 2018-05-18 12:04:18.321 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input2/
+ 2018-05-18 12:04:18.321 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output2/
+ 2018-05-18 12:04:18.321 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (10).pdf
+ 2018-05-18 12:04:40.432 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:04:40.438 ERROR com.mst.pdf.processor.PDFReader: Exception : C:\Sandeep\eclipse-workspace\pdf-processor\files\input2\2005_935179 - Copy (10).pdf -> C:\Sandeep\eclipse-workspace\pdf-processor\files\output2\2005_935179 - Copy (10).pdf: The process cannot access the file because it is being used by another process.
+
+ 2018-05-18 12:04:41.055 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:04:41.062 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (10).pdf
+ 2018-05-18 12:04:41.063 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (11).pdf
+ 2018-05-18 12:04:49.545 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:04:49.550 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (11).pdf
+ 2018-05-18 12:04:49.551 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (12).pdf
+ 2018-05-18 12:04:58.031 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:04:58.036 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (12).pdf
+ 2018-05-18 12:04:58.036 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (13).pdf
+ 2018-05-18 12:05:06.627 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:05:06.631 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (13).pdf
+ 2018-05-18 12:05:06.632 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (14).pdf
+ 2018-05-18 12:05:15.369 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:05:15.374 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (14).pdf
+ 2018-05-18 12:05:15.374 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (15).pdf
+ 2018-05-18 12:05:24.331 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:05:24.333 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (15).pdf
+ 2018-05-18 12:05:24.333 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (16).pdf
+ 2018-05-18 12:05:32.713 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:05:32.715 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (16).pdf
+ 2018-05-18 12:05:32.716 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (17).pdf
+ 2018-05-18 12:05:41.443 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:05:41.446 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (17).pdf
+ 2018-05-18 12:05:41.447 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (18).pdf
+ 2018-05-18 12:05:49.723 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:05:49.727 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (18).pdf
+ 2018-05-18 12:05:49.728 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (19).pdf
+ 2018-05-18 12:05:58.331 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:05:58.337 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (19).pdf
+ 2018-05-18 12:05:58.338 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (2).pdf
+ 2018-05-18 12:06:07.091 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:06:07.095 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (2).pdf
+ 2018-05-18 12:06:07.096 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (3).pdf
+ 2018-05-18 12:06:15.506 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:06:15.646 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (3).pdf
+ 2018-05-18 12:06:15.646 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (4).pdf
+ 2018-05-18 12:06:24.227 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:06:24.232 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (4).pdf
+ 2018-05-18 12:06:24.232 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (5).pdf
+ 2018-05-18 12:06:32.774 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:06:32.779 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (5).pdf
+ 2018-05-18 12:06:32.780 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (6).pdf
+ 2018-05-18 12:06:41.838 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:06:41.843 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (6).pdf
+ 2018-05-18 12:06:41.844 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (7).pdf
+ 2018-05-18 12:06:50.765 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:06:50.770 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (7).pdf
+ 2018-05-18 12:06:50.771 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (8).pdf
+ 2018-05-18 12:07:00.459 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:07:00.463 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (8).pdf
+ 2018-05-18 12:07:00.464 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (9).pdf
+ 2018-05-18 12:07:09.003 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:07:09.008 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy (9).pdf
+ 2018-05-18 12:07:09.008 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy.pdf
+ 2018-05-18 12:07:17.667 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:07:17.707 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179 - Copy.pdf
+ 2018-05-18 12:07:17.707 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179.pdf
+ 2018-05-18 12:07:26.303 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-18 12:07:26.308 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935179.pdf
  
