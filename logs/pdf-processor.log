@@ -1,0 +1,30 @@
+2018-05-17 16:30:21.723 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
+ 2018-05-17 16:30:21.723 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
+ 2018-05-17 16:30:21.723 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (10).pdf
+ 2018-05-17 16:30:59.228 ERROR com.mst.pdf.processor.PostJSONRequestor: IOException : Server returned HTTP response code: 500 for URL: http://10.0.129.218:8080/mst-sentence-service-discovery/webapi/recommandation/save
+ 2018-05-17 16:30:59.233 INFO  com.mst.pdf.processor.PDFReader: File successfully processed and moved to output directory : 2005_935178 - Copy (10).pdf
+ 2018-05-17 16:30:59.233 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (11).pdf
+ 2018-05-18 08:50:29.230 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
+ 2018-05-18 08:50:29.232 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
+ 2018-05-18 08:50:29.233 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (10).pdf
+ 2018-05-18 09:07:55.659 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
+ 2018-05-18 09:07:55.661 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
+ 2018-05-18 09:07:55.663 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178 - Copy (10).pdf
+ 2018-05-18 09:08:18.649 ERROR com.mst.pdf.processor.PostJSONRequestor: Exception : Connection timed out: connect
+ 2018-05-18 09:08:18.650 ERROR com.mst.pdf.processor.PDFReader: Exception : Connection timed out: connect
+ 2018-05-18 09:08:18.651 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input2/
+ 2018-05-18 09:08:18.651 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output2/
+ 2018-05-18 09:08:18.656 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935179 - Copy (10).pdf
+ 2018-05-18 09:09:16.628 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
+ 2018-05-18 09:09:16.629 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
+ 2018-05-18 09:09:16.630 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178.pdf
+ 2018-05-18 09:10:33.849 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
+ 2018-05-18 09:10:33.850 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
+ 2018-05-18 09:10:33.850 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178.pdf
+ 2018-05-18 09:11:13.154 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
+ 2018-05-18 09:11:13.156 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
+ 2018-05-18 09:11:13.156 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178.pdf
+ 2018-05-18 09:15:12.526 INFO  com.mst.pdf.processor.PDFReader: Input directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/input/
+ 2018-05-18 09:15:12.528 INFO  com.mst.pdf.processor.PDFReader: Output directory : C:/Sandeep/eclipse-workspace/pdf-processor/files/output/
+ 2018-05-18 09:15:12.528 INFO  com.mst.pdf.processor.PDFReader: File being processed : 2005_935178.pdf
+ 
