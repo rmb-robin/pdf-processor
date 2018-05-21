@@ -6,10 +6,13 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 import org.apache.log4j.Logger;
 import org.apache.tika.metadata.Metadata;
@@ -28,43 +31,81 @@ import com.mst.pdf.util.Utility;;
  *
  */
 public class PDFReader {
-
 	static Logger logger = Logger.getLogger(PDFReader.class);
+	static {
+		Utility.loadProperties();
+	}
 
 	public static void main(String[] args) {
-		Utility.loadProperties();
-		int noOfOrganizations = Integer.valueOf(Utility.getProperty(Constants.NO_OF_ORGANIZATIONS));
-		for (int orgNo = 1; orgNo <= noOfOrganizations; orgNo++) {
-			readDirectory(orgNo);
+		PDFReader pdfReader = new PDFReader();
+		pdfReader.processPDFFiles();
+	}
 
+	/**
+	 * The method to process PDF files.
+	 * 
+	 */
+
+	private void processPDFFiles() {
+		int noOfOrganizations = Integer.valueOf(Utility.getProperty(Constants.NO_OF_ORGANIZATIONS));
+		List<Path> listOfFiles = null;
+		for (int orgNo = 1; orgNo <= noOfOrganizations; orgNo++) {
+			listOfFiles = readNFilesOnly(orgNo);
+			processFiles(listOfFiles, orgNo);
 		}
 	}
 
 	/**
-	 * The method reads files from the parent directory (fileDirectory), stripes out
-	 * extra contents, converts to JSON object and posts the JSON payload to MongoDB
-	 * API Service.
+	 * The method to read only N files from the directory.
+	 * 
+	 * @param orgNo
+	 * @return
+	 */
+
+	private List<Path> readNFilesOnly(int orgNo) {
+		String inputDirectory = Utility.getProperty(Constants.INPUT_DIRECTORY_PATH + orgNo);
+		List<Path> listOfFiles = null;
+		logger.info("Input directory : " + inputDirectory);
+		try {
+			if (inputDirectory == null)
+				throw new Exception("Directory " + inputDirectory + " not found, verify the configuration.");
+
+			Path folder = Paths.get(inputDirectory);
+			final int noOfFilesPerBatch = Integer.valueOf(Utility.getProperty(Constants.NO_OF_FILES_PER_BATCH + orgNo))
+					+ 1;
+			listOfFiles = Files.walk(folder).limit(noOfFilesPerBatch).map(p -> (Path) p).collect(Collectors.toList());
+
+			listOfFiles.remove(0);// removing the parent directory as this is not needed in this collection.
+
+			// listOfFiles.forEach(System.out::println);
+
+		} catch (IOException e) {
+			logger.error("Error while reading N files from the directory : " + e.getMessage());
+		} catch (Exception e) {
+			logger.error("Error while reading N files from the directory : " + e.getMessage());
+		}
+		return listOfFiles;
+	}
+
+	/**
+	 * The method reads given N files from the parent directory (listOfFiles),
+	 * stripes out extra contents, converts to JSON object and posts the JSON
+	 * payload to MongoDB API Service.
 	 *
 	 */
-	public static void readDirectory(int orgNo) {
-		String inputDirectory = Utility.getProperty(Constants.INPUT_DIRECTORY_PATH + orgNo);
+	public void processFiles(List<Path> listOfFiles, int orgNo) {
 		String outputDirectory = Utility.getProperty(Constants.OUTPUT_DIRECTORY_PATH + orgNo);
 		String orgID = Utility.getProperty(Constants.ORG_ID + orgNo);
 
-		logger.info("Input directory : " + inputDirectory);
 		logger.info("Output directory : " + outputDirectory);
 
 		InputStream inputStream = null;
+		String fileName = null;
 		try {
-			File dir = new File(inputDirectory);
-			String[] fileNames = dir.list();
-			if (fileNames == null)
-				throw new Exception("Directory " + inputDirectory + " not found, verify the configuration.");
+			for (Path filePath : listOfFiles) {
+				logger.info("File being processed : " + filePath);
 
-			for (String fileName : fileNames) {
-				logger.info("File being processed : " + fileName);
-
-				inputStream = new BufferedInputStream(new FileInputStream(new File(inputDirectory + fileName)));
+				inputStream = new BufferedInputStream(new FileInputStream(new File(filePath.toString())));
 				Parser parser = new AutoDetectParser();
 				ContentHandler handler = new BodyContentHandler();
 				parser.parse(inputStream, handler, new Metadata(), new ParseContext());
@@ -77,16 +118,18 @@ public class PDFReader {
 				// Added Org ID
 				sentenceTextRequest.getDiscreteData().setOrganizationId(orgID);
 
+				fileName = filePath.getFileName().toString();
 				// the first few letters before "_" of the file name
 				sentenceTextRequest.getDiscreteData().setPatientAccount(fileName.substring(0, fileName.indexOf("_")));
-				logger.debug(
-						"The object of SentenceTextRequest for converting to JSON : " + sentenceTextRequest.toString());
+				logger.debug("The object of SentenceTextRequest ready for converting to JSON : "
+						+ sentenceTextRequest.toString());
 
 				// System.out.println("sentenceTextRequest : " + sentenceTextRequest);
 
 				String jsonObj = new Gson().toJson(sentenceTextRequest);
 				logger.debug("jsonObj of " + fileName + " : " + jsonObj);
-				String response = PostJSONRequestor.postJSONRequest(jsonObj);
+				logger.info("Posting the JSON object to API Service for " + fileName);
+				String response = PostJSONRequestor.getInstance().postJSONRequest(jsonObj);
 				logger.debug("API response for " + fileName + " : " + response);
 				try {
 					inputStream.close();
@@ -94,20 +137,11 @@ public class PDFReader {
 					logger.error(e.getStackTrace());
 				}
 				// once the file is processed, move it to output directory
-				Files.move(Paths.get(inputDirectory + fileName), Paths.get(outputDirectory + fileName),
-						StandardCopyOption.REPLACE_EXISTING);
+				Files.move(filePath, Paths.get(outputDirectory + fileName), StandardCopyOption.REPLACE_EXISTING);
 				logger.info("File successfully processed and moved to output directory : " + fileName);
 			}
 		} catch (Exception e) {
 			logger.error("Exception : " + e.getMessage());
-		} finally {
-			if (inputStream != null) {
-				try {
-					inputStream.close();
-				} catch (IOException e) {
-					logger.error(e.getStackTrace());
-				}
-			}
 		}
 	}
 
@@ -116,7 +150,7 @@ public class PDFReader {
 	 * extra new line characters, replaces / with space, ! with ..
 	 *
 	 */
-	private static String cleanUpContent(String fileContent) {
+	private String cleanUpContent(String fileContent) {
 		fileContent = fileContent.trim().replaceAll("[\n]{2,}", " ");
 		fileContent = fileContent.replaceAll("\t", " ");
 
@@ -137,7 +171,7 @@ public class PDFReader {
 	 * created object.
 	 *
 	 */
-	private static SentenceTextRequest createSentenceTextRequestObj(String fileContent) {
+	private SentenceTextRequest createSentenceTextRequestObj(String fileContent) {
 		SentenceTextRequest sentenceTextRequest = new SentenceTextRequest();
 		sentenceTextRequest.setText(fileContent);
 		sentenceTextRequest.setDiscreteData(new DiscreteData());

@@ -1,0 +1,1 @@
+1. From the exported pdf-processor.jar, make sure to remove the log4j.properties file before uploading to unix env - /usr/local/lib/pdf-processor. if log4j.properties file not removed from jar then it will 

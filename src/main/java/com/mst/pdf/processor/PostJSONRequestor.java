@@ -14,8 +14,86 @@ import com.mst.pdf.util.Utility;
 
 public class PostJSONRequestor {
 	static Logger logger = Logger.getLogger(PostJSONRequestor.class);
+	private static PostJSONRequestor instance = null;
 
-	public static String postJSONRequest(String text) throws Exception {
+	private PostJSONRequestor() {
+	}
+
+	public static PostJSONRequestor getInstance() {
+
+		if (instance == null) {
+			synchronized (PostJSONRequestor.class) {
+				if (instance == null) {
+					instance = new PostJSONRequestor();
+				}
+			}
+		}
+		return instance;
+	}
+
+	private HttpURLConnection getHttpURLConnection() {
+		HttpURLConnection connection = null;
+		try {
+			URL url = new URL(Utility.getProperty(Constants.REQUEST_DB_URL));
+			connection = (HttpURLConnection) url.openConnection();
+			connection.setRequestMethod("POST");
+			connection.setDoOutput(true);
+			connection.setRequestProperty("Accept", "application/json");
+			connection.setRequestProperty("Content-Type", "application/json");
+		} catch (Exception e) {
+			logger.error("Exception : " + e.getMessage());
+		}
+		return connection;
+	}
+
+	public void closeHttpURLConnection(HttpURLConnection connection) {
+		try {
+			if (connection != null)
+				connection.disconnect();
+		} catch (Exception e) {
+			logger.error("Error while closing the connection : " + e.getMessage());
+		}
+	}
+
+	public String postJSONRequest(String text) throws Exception {
+		// set URL to Post Request
+		String responseMsg = null;
+		OutputStreamWriter streamWriter = null;
+		HttpURLConnection connection = null;
+		try {
+			connection = getHttpURLConnection();
+			streamWriter = new OutputStreamWriter(connection.getOutputStream());
+
+			streamWriter.write(text);
+			streamWriter.flush();
+			streamWriter.close();
+
+			BufferedReader br = null;
+			try {
+				br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+
+			} catch (IOException ioe) {
+				logger.error("IOException : " + ioe.getMessage());
+				if (!ioe.getMessage().contains("HTTP response code: 500"))
+					throw ioe;
+			}
+			String response = null;
+			StringBuffer buffer = new StringBuffer();
+
+			while (br != null && (response = br.readLine()) != null) {
+				buffer.append(response);
+			}
+			responseMsg = connection.getResponseCode() + "~" + buffer.toString();
+		} catch (Exception e) {
+			logger.error("Exception : " + e.getMessage());
+			throw e;
+		} finally {
+			this.closeHttpURLConnection(connection);
+		}
+		return responseMsg;
+	}
+
+	public static String postJSONRequest_01(String text) throws Exception {
 		// set URL to Post Request
 		String responseMsg = null;
 

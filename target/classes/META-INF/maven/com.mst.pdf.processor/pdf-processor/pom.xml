@@ -109,7 +109,7 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.4.0</version>
 				<configuration>
-					<mainClass>com.mst.pdf.processor.AppNew</mainClass>
+					<mainClass>com.mst.pdf.processor.PDFReader</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
